@@ -13,6 +13,7 @@
 		B4E45CA51B3AE234002B178B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E45CA31B3AE234002B178B /* LaunchScreen.xib */; };
 		B4E45CB11B3AE234002B178B /* CombatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CB01B3AE234002B178B /* CombatTests.swift */; };
 		B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */; };
+		B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CC01B3AF56E002B178B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B4E45CAF1B3AE234002B178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E45CB01B3AE234002B178B /* CombatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatTests.swift; sourceTree = "<group>"; };
 		B4E45CBC1B3AE296002B178B /* Combat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Combat.xcdatamodel; sourceTree = "<group>"; };
+		B4E45CC01B3AF56E002B178B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Model/Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		B4E45CBA1B3AE267002B178B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B4E45CC01B3AF56E002B178B /* Utilities.swift */,
 				B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */,
 			);
 			name = Model;
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */,
 				B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */,
 				B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */,
 			);
@@ -431,6 +435,7 @@
 				B4E45CB61B3AE234002B178B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4E45CB71B3AE234002B178B /* Build configuration list for PBXNativeTarget "CombatTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +444,7 @@
 				B4E45CB91B3AE234002B178B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
