@@ -12,6 +12,7 @@ class Constants
 {
     enum Element: Int32, Printable {
         case Fire, Water, Earth, Thunder, Wind
+        
         var description: String {
             switch self {
             case .Fire: return "Fire"
@@ -23,20 +24,35 @@ class Constants
         }
     }
     
-    /* default action is attack */
-    enum Action: Printable {
-        case Attack, Defend, Escape
+    enum SkillType: Int32, Printable {
+        case Attack, Defend, Heal, Buff
+        
         var description: String {
             switch self {
             case .Attack: return "Attack"
             case .Defend: return "Defend"
-            case .Escape: return "Escape"
+            case .Heal: return "Heal"
+            case .Buff: return "Buff"
             }
         }
     }
     
+//    /* default action is attack */
+//    enum Action: Printable {
+//        case Attack, Defend, Escape
+//        
+//        var description: String {
+//            switch self {
+//            case .Attack: return "Attack"
+//            case .Defend: return "Defend"
+//            case .Escape: return "Escape"
+//            }
+//        }
+//    }
+    
     enum GameStatus: Printable {
         case Continue, End
+        
         var description: String {
             switch self {
             case .Continue: return "Continue Game"

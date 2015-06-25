@@ -24,9 +24,12 @@ class Monster
     private(set) var defense: Int32
     private(set) var isDead: Bool = false
     
+    // read only skillset
+    private(set) var skills = [Skill]()
+    
     // Initializer with all properties
     // designated initializer
-    init(name: String, element: Int32, growth: Float, level: Int32, hp: Int32, mp: Int32, speed: Int32, damage: Int32, defense: Int32)
+    init(name: String, element: Int32, growth: Float, level: Int32, hp: Int32, mp: Int32, speed: Int32, damage: Int32, defense: Int32, skills: [Int32])
     {
         /* set constant display properties */
         self.name = name
@@ -40,6 +43,8 @@ class Monster
         self.speed = speed
         self.damage = damage
         self.defense = defense
+        
+        // TODO: Transform: skills[Int32] -> skills[Skill]
     }
     
     // Random monster initializer
