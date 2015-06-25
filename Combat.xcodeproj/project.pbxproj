@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A4B531B3BF837000C19D4 /* Monster.swift */; };
 		B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45C971B3AE234002B178B /* AppDelegate.swift */; };
 		B4E45CA01B3AE234002B178B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E45C9E1B3AE234002B178B /* Main.storyboard */; };
 		B4E45CA21B3AE234002B178B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E45CA11B3AE234002B178B /* Images.xcassets */; };
@@ -14,6 +15,7 @@
 		B4E45CB11B3AE234002B178B /* CombatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CB01B3AE234002B178B /* CombatTests.swift */; };
 		B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */; };
 		B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CC01B3AF56E002B178B /* Utilities.swift */; };
+		B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CC21B3AFE96002B178B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B40A4B531B3BF837000C19D4 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Model/Monster.swift; sourceTree = "<group>"; };
 		B4E45C921B3AE234002B178B /* Combat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E45C961B3AE234002B178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E45C971B3AE234002B178B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B4E45CB01B3AE234002B178B /* CombatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatTests.swift; sourceTree = "<group>"; };
 		B4E45CBC1B3AE296002B178B /* Combat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Combat.xcdatamodel; sourceTree = "<group>"; };
 		B4E45CC01B3AF56E002B178B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Model/Utilities.swift; sourceTree = "<group>"; };
+		B4E45CC21B3AFE96002B178B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,9 @@
 		B4E45CBA1B3AE267002B178B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B4E45CC21B3AFE96002B178B /* Constants.swift */,
 				B4E45CC01B3AF56E002B178B /* Utilities.swift */,
+				B40A4B531B3BF837000C19D4 /* Monster.swift */,
 				B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */,
 			);
 			name = Model;
@@ -239,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */,
 				B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */,
 				B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */,
 				B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */,
+				B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

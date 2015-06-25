@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        // #### Utilities test
+//        let growth = Utilities.randomGrowth()
+//        println(growth)
+//        println(Constants.Element(rawValue: Utilities.randomElement())!)
+//        println("HP[350,450] -> \(Utilities.randomValue(type: .HP, growth: growth))")
+//        println("MP[150,250] -> \(Utilities.randomValue(type: .MP, growth: growth))")
+//        println("Speed[100,150] -> \(Utilities.randomValue(type: .Speed, growth: growth))")
+//        println("Damage[200,250] -> \(Utilities.randomValue(type: .Damage, growth: growth))")
+//        println("Defense[75,125] -> \(Utilities.randomValue(type: .Defense, growth: growth))")
+        
+//        // #### Monster test
+//        let m1 = Monster(name: "Monster1", level: 0)
+//        let m2 = Monster(name: "Monster2", level: 0)
+//        
+//        println(m1.description)
+//        println(m2.description)
+
         return true
     }
 
