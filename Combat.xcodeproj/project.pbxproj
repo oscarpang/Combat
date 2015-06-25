@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A4B531B3BF837000C19D4 /* Monster.swift */; };
+		B40A4B5A1B3C11B0000C19D4 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A4B591B3C11B0000C19D4 /* Skill.swift */; };
 		B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45C971B3AE234002B178B /* AppDelegate.swift */; };
 		B4E45CA01B3AE234002B178B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E45C9E1B3AE234002B178B /* Main.storyboard */; };
 		B4E45CA21B3AE234002B178B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E45CA11B3AE234002B178B /* Images.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		B40A4B531B3BF837000C19D4 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Model/Monster.swift; sourceTree = "<group>"; };
+		B40A4B591B3C11B0000C19D4 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
 		B4E45C921B3AE234002B178B /* Combat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E45C961B3AE234002B178B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E45C971B3AE234002B178B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				B4E45CC21B3AFE96002B178B /* Constants.swift */,
 				B4E45CC01B3AF56E002B178B /* Utilities.swift */,
 				B40A4B531B3BF837000C19D4 /* Monster.swift */,
+				B40A4B591B3C11B0000C19D4 /* Skill.swift */,
 				B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */,
 			);
 			name = Model;
@@ -248,6 +251,7 @@
 				B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */,
 				B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */,
 				B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */,
+				B40A4B5A1B3C11B0000C19D4 /* Skill.swift in Sources */,
 				B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */,
 				B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */,
 			);
