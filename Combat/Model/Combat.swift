@@ -37,7 +37,7 @@ class Combat
     func evaluate() -> String {
         var msg = ""
         if status == .End {
-            msg = "Game has already ended!\n" + msg
+            msg = "Battle has already ended!\n" + msg
             msg = "-------------------------\n" + msg
             return msg
         }
