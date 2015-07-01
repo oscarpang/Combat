@@ -35,6 +35,88 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        println(m1.description)
 //        println(m2.description)
 
+//        // #### Combat test
+//        let m1 = Monster(name: "Monster 1", level: 0)
+//        println(m1.description)
+//        let m2 = Monster(name: "Monster 2", level: 0)
+//        println(m2.description)
+//        
+//        let combat = Combat(monster1: m1, monster2: m2)
+//        
+//        println("-------------------------")
+//        combat.defend(defender: m1)
+//        combat.defend(defender: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.defend(defender: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.defend(defender: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.escape(escaper:m1)
+//        combat.defend(defender: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.defend(defender: m1)
+//        combat.escape(escaper:m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.escape(escaper:m1)
+//        combat.escape(escaper:m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+
         return true
     }
 
