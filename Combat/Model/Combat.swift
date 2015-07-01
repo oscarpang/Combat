@@ -37,12 +37,13 @@ class Combat
     func evaluate() -> String {
         var msg = ""
         if status == .End {
-            msg += "Game has already ended!\n\n"
+            msg = "Game has already ended!\n" + msg
+            msg = "-------------------------\n" + msg
             return msg
         }
         
-        msg += "\(monster1.name) takes action: \(monster1.action.description).\n"
-        msg += "\(monster2.name) takes action: \(monster2.action.description).\n"
+        msg = "\(monster1.name) takes action: \(monster1.action.description).\n" + msg
+        msg = "\(monster2.name) takes action: \(monster2.action.description).\n" + msg
         
         // both monsters attack
         if monster1.action == .Attack && monster2.action == .Attack
@@ -102,7 +103,7 @@ class Combat
                     // monster2 defends
                     if monster2.action == .Defend
                     {
-                        msg += "\(monster2.name) defends.\n"
+                        msg = "\(monster2.name) defends.\n" + msg
                         status = evaluateEscape(escaper: monster1, opponent: monster2, msg: &msg)
                     }
                         
@@ -130,7 +131,7 @@ class Combat
                     // monster1 defends
                     if monster1.action == .Defend
                     {
-                        msg += "\(monster1.name) defends.\n"
+                        msg = "\(monster1.name) defends.\n" + msg
                         status = evaluateEscape(escaper: monster2, opponent: monster1, msg: &msg)
                     }
                         
@@ -161,7 +162,7 @@ class Combat
             if monster1.action == .Defend && monster2.action == .Defend
             {
                 // nothing happens here
-                msg += "Both monsters defend.\n"
+                msg = "Both monsters defend.\n" + msg
                 status = .Continue
             }
                 
@@ -176,7 +177,7 @@ class Combat
             }
         }
         
-        msg += "\n"
+        msg = "-------------------------\n" + msg
         return msg
     }
     
@@ -190,11 +191,11 @@ class Combat
             damage += Int32(arc4random() % 10 + 5)
             target.damage(damage)
             
-            msg += "\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.\n"
+            msg = "\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.\n" + msg
             
             // check if target is dead
             if target.isDead {
-                msg += "\(target.name) is dead.\n"
+                msg = "\(target.name) is dead.\n" + msg
                 return .End
             }
             
@@ -203,11 +204,11 @@ class Combat
             damage += Int32(arc4random() % 10 + 5)
             attacker.damage(damage)
             
-            msg += "\(target.name) attacks \(attacker.name), \(attacker.name) loses \(damage) hp.\n"
+            msg = "\(target.name) attacks \(attacker.name), \(attacker.name) loses \(damage) hp.\n" + msg
             
             // check if attacker is dead
             if attacker.isDead {
-                msg += "\(attacker.name) is dead.\n"
+                msg = "\(attacker.name) is dead.\n" + msg
                 return .End
             }
         }
@@ -221,12 +222,12 @@ class Combat
                 damage += Int32(arc4random() % 10 + 5)
                 target.damage(damage)
                 
-                msg += "\(target.name) defends.\n"
-                msg += "\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.\n"
+                msg = "\(target.name) defends.\n" + msg
+                msg = "\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.\n" + msg
 
                 // check if target is dead
                 if target.isDead {
-                    msg += "\(target.name) is dead.\n"
+                    msg = "\(target.name) is dead.\n" + msg
                     return .End
                 }
                 
@@ -237,11 +238,11 @@ class Combat
                 damage += Int32(arc4random() % 10 + 5)
                 target.damage(damage)
                 
-                msg += "\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.\n"
+                msg = "\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.\n" + msg
                 
                 // check if target is dead
                 if target.isDead {
-                    msg += "\(target.name) is dead.\n"
+                    msg = "\(target.name) is dead.\n" + msg
                     return .End
                 }
             }
@@ -257,10 +258,10 @@ class Combat
         let rand = arc4random() % totalSpeed
         
         if rand >= UInt32(escaper.speed) {
-            msg += "\(escaper.name) successfully escapes\n"
+            msg = "\(escaper.name) successfully escapes\n" + msg
             return .End
         } else {
-            msg += "\(escaper.name) fails to escape\n"
+            msg = "\(escaper.name) fails to escape\n" + msg
             return .Continue
         }
     }
