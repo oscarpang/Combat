@@ -11,8 +11,8 @@ import Foundation
 class Combat
 {
     // two monsters involved in combat
-    private let monster1: Monster
-    private let monster2: Monster
+    let monster1: Monster
+    let monster2: Monster
     
     // status of game
     // this should be checked before each turn
