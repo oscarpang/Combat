@@ -10,6 +10,12 @@ import Foundation
 
 class Monster
 {
+    // chosen action
+    var action: Constants.Action = .Attack
+    
+    // chosen skill, can be nil
+    var skill: Skill? = nil
+    
     // used for display only
     let name: String
     let element: Constants.Element
@@ -27,7 +33,7 @@ class Monster
     // read only skillset
     private(set) var skills = [Skill]()
     
-    // Initializer with all properties
+    // initializer with all properties
     // designated initializer
     init(name: String, element: Int32, growth: Float, level: Int32, hp: Int32, mp: Int32, speed: Int32, damage: Int32, defense: Int32, skills: [Int32])
     {
@@ -44,10 +50,10 @@ class Monster
         self.damage = damage
         self.defense = defense
         
-        // TODO: Transform: skills[Int32] -> skills[Skill]
+        // TODO: transform: skills[Int32] -> skills[Skill]
     }
     
-    // Random monster initializer
+    // random monster initializer
     init(name: String, level: Int32)
     {
         // set constant display properties

@@ -37,18 +37,19 @@ class Constants
         }
     }
     
-//    /* default action is attack */
-//    enum Action: Printable {
-//        case Attack, Defend, Escape
-//        
-//        var description: String {
-//            switch self {
-//            case .Attack: return "Attack"
-//            case .Defend: return "Defend"
-//            case .Escape: return "Escape"
-//            }
-//        }
-//    }
+    // default action is attack
+    enum Action: Printable {
+        case Attack, Defend, Skill, Escape
+        
+        var description: String {
+            switch self {
+            case .Attack: return "Attack"
+            case .Defend: return "Defend"
+            case .Skill: return "Use Skill"
+            case .Escape: return "Escape"
+            }
+        }
+    }
     
     enum GameStatus: Printable {
         case Continue, End
@@ -56,7 +57,7 @@ class Constants
         var description: String {
             switch self {
             case .Continue: return "Continue Game"
-            case .End : return "End Game"
+            case .End : return "Game Ended"
             }
         }
     }
