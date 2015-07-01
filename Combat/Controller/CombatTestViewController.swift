@@ -19,6 +19,7 @@ class CombatTestViewController: UIViewController
     @IBOutlet weak var m1DamageLabel: UILabel!
     @IBOutlet weak var m1DefenseLabel: UILabel!
     @IBOutlet weak var m1GrowthLabel: UILabel!
+    @IBOutlet weak var m1ElementLabel: UILabel!
     
     // Monster 2
     @IBOutlet weak var m2NameLabel: UILabel!
@@ -28,6 +29,7 @@ class CombatTestViewController: UIViewController
     @IBOutlet weak var m2DamageLabel: UILabel!
     @IBOutlet weak var m2DefenseLabel: UILabel!
     @IBOutlet weak var m2GrowthLabel: UILabel!
+    @IBOutlet weak var m2ElementLabel: UILabel!
     
     // outcome log for battle
     @IBOutlet weak var logText: UITextView!
@@ -44,6 +46,8 @@ class CombatTestViewController: UIViewController
         m2NameLabel.text = "Name:  \(combat.monster2.name)"
         m1GrowthLabel.text = "Growth:  \(combat.monster1.growth)"
         m2GrowthLabel.text = "Growth:  \(combat.monster2.growth)"
+        m1ElementLabel.text = "Element:  \(combat.monster1.element.description)"
+        m2ElementLabel.text = "Element:  \(combat.monster2.element.description)"
         
         updateUserInterface()
     }
