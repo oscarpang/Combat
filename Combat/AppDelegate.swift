@@ -17,6 +17,106 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        // #### Utilities test
+//        let growth = Utilities.randomGrowth()
+//        println(growth)
+//        println(Constants.Element(rawValue: Utilities.randomElement())!)
+//        println("HP[350,450] -> \(Utilities.randomValue(type: .HP, growth: growth))")
+//        println("MP[150,250] -> \(Utilities.randomValue(type: .MP, growth: growth))")
+//        println("Speed[100,150] -> \(Utilities.randomValue(type: .Speed, growth: growth))")
+//        println("Damage[200,250] -> \(Utilities.randomValue(type: .Damage, growth: growth))")
+//        println("Defense[75,125] -> \(Utilities.randomValue(type: .Defense, growth: growth))")
+        
+//        // #### Monster test
+//        let m1 = Monster(name: "Monster1", level: 0)
+//        let m2 = Monster(name: "Monster2", level: 0)
+//        
+//        println(m1.description)
+//        println(m2.description)
+
+//        // #### Combat test
+//        let m1 = Monster(name: "Monster 1", level: 0)
+//        println(m1.description)
+//        let m2 = Monster(name: "Monster 2", level: 0)
+//        println(m2.description)
+//        
+//        let combat = Combat(monster1: m1, monster2: m2)
+//        
+//        println("-------------------------")
+//        combat.defend(defender: m1)
+//        combat.defend(defender: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.defend(defender: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.defend(defender: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.escape(escaper:m1)
+//        combat.defend(defender: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.defend(defender: m1)
+//        combat.escape(escaper:m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.escape(escaper:m1)
+//        combat.escape(escaper:m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+//        
+//        combat.attack(attacker: m1)
+//        combat.attack(attacker: m2)
+//        combat.evaluate()
+//        println(combat.status.description)
+//        println("-------------------------")
+
         return true
     }
 
@@ -49,7 +149,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.qingweilan.Combat" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as NSURL
+        return urls[urls.count-1] as! NSURL
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
