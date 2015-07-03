@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="3465" y="426"/>
         </scene>
-        <!--View Controller-->
+        <!--Items View Controller-->
         <scene sceneID="1s0-IL-ZbS">
             <objects>
-                <viewController id="kWE-QO-Wbl" sceneMemberID="viewController">
+                <viewController id="kWE-QO-Wbl" customClass="ItemsViewController" customModule="Combat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k6y-fe-K8Z"/>
                         <viewControllerLayoutGuide type="bottom" id="c82-tV-cez"/>
