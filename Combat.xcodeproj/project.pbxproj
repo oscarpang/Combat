@@ -17,6 +17,10 @@
 		B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */; };
 		B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CC01B3AF56E002B178B /* Utilities.swift */; };
 		B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CC21B3AFE96002B178B /* Constants.swift */; };
+		B4E95A251B468426008F1499 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A241B468426008F1499 /* ItemsViewController.swift */; };
+		B4E95A271B468809008F1499 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A261B468809008F1499 /* Item.swift */; };
+		B4E95A231B465677008F1499 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A221B465677008F1499 /* MapViewController.swift */; };
+		B4E95A291B4695F6008F1499 /* MonstersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A281B4695F6008F1499 /* MonstersViewController.swift */; };
 		B4FE28691B43DBD000F86C85 /* Combat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE28681B43DBD000F86C85 /* Combat.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		B4E45CBC1B3AE296002B178B /* Combat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Combat.xcdatamodel; sourceTree = "<group>"; };
 		B4E45CC01B3AF56E002B178B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Model/Utilities.swift; sourceTree = "<group>"; };
 		B4E45CC21B3AFE96002B178B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
+		B4E95A241B468426008F1499 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = Controller/ItemsViewController.swift; sourceTree = "<group>"; };
+		B4E95A261B468809008F1499 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
+		B4E95A221B465677008F1499 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Controller/MapViewController.swift; sourceTree = "<group>"; };
+		B4E95A281B4695F6008F1499 /* MonstersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonstersViewController.swift; path = Controller/MonstersViewController.swift; sourceTree = "<group>"; };
 		B4FE28681B43DBD000F86C85 /* Combat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Combat.swift; path = Model/Combat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +140,7 @@
 				B4FE28681B43DBD000F86C85 /* Combat.swift */,
 				B40A4B531B3BF837000C19D4 /* Monster.swift */,
 				B40A4B591B3C11B0000C19D4 /* Skill.swift */,
+				B4E95A261B468809008F1499 /* Item.swift */,
 				B4E45CBB1B3AE296002B178B /* Combat.xcdatamodeld */,
 			);
 			name = Model;
@@ -147,6 +156,9 @@
 		B4E45CBF1B3AE29E002B178B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B4E95A241B468426008F1499 /* ItemsViewController.swift */,
+				B4E95A221B465677008F1499 /* MapViewController.swift */,
+				B4E95A281B4695F6008F1499 /* MonstersViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,12 +264,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */,
+				B4E95A271B468809008F1499 /* Item.swift in Sources */,
+				B4E95A291B4695F6008F1499 /* MonstersViewController.swift in Sources */,
 				B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */,
 				B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */,
 				B40A4B5A1B3C11B0000C19D4 /* Skill.swift in Sources */,
 				B4E45CBD1B3AE296002B178B /* Combat.xcdatamodeld in Sources */,
+				B4E95A251B468426008F1499 /* ItemsViewController.swift in Sources */,
 				B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */,
 				B4FE28691B43DBD000F86C85 /* Combat.swift in Sources */,
+				B4E95A231B465677008F1499 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
