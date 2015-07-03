@@ -20,6 +20,7 @@
 		B4E95A251B468426008F1499 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A241B468426008F1499 /* ItemsViewController.swift */; };
 		B4E95A271B468809008F1499 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A261B468809008F1499 /* Item.swift */; };
 		B4E95A231B465677008F1499 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A221B465677008F1499 /* MapViewController.swift */; };
+		B4E95A291B4695F6008F1499 /* MonstersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A281B4695F6008F1499 /* MonstersViewController.swift */; };
 		B4FE28691B43DBD000F86C85 /* Combat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE28681B43DBD000F86C85 /* Combat.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		B4E95A241B468426008F1499 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = Controller/ItemsViewController.swift; sourceTree = "<group>"; };
 		B4E95A261B468809008F1499 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
 		B4E95A221B465677008F1499 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Controller/MapViewController.swift; sourceTree = "<group>"; };
+		B4E95A281B4695F6008F1499 /* MonstersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonstersViewController.swift; path = Controller/MonstersViewController.swift; sourceTree = "<group>"; };
 		B4FE28681B43DBD000F86C85 /* Combat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Combat.swift; path = Model/Combat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 			children = (
 				B4E95A241B468426008F1499 /* ItemsViewController.swift */,
 				B4E95A221B465677008F1499 /* MapViewController.swift */,
+				B4E95A281B4695F6008F1499 /* MonstersViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */,
 				B4E95A271B468809008F1499 /* Item.swift in Sources */,
+				B4E95A291B4695F6008F1499 /* MonstersViewController.swift in Sources */,
 				B4E45CC11B3AF56E002B178B /* Utilities.swift in Sources */,
 				B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */,
 				B40A4B5A1B3C11B0000C19D4 /* Skill.swift in Sources */,

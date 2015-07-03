@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Monsters View Controller-->
         <scene sceneID="PaB-Mg-1Bd">
             <objects>
-                <viewController id="niH-Aa-6J1" sceneMemberID="viewController">
+                <viewController id="niH-Aa-6J1" customClass="MonstersViewController" customModule="Combat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z2f-UW-OcX"/>
                         <viewControllerLayoutGuide type="bottom" id="bxd-Ni-e19"/>
