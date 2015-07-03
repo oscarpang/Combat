@@ -20,6 +20,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mjb-rz-7M0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="niH-Aa-6J1" id="aov-bX-HID"/>
+                                    <outlet property="delegate" destination="niH-Aa-6J1" id="0Zq-J9-a3g"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zpX-4x-fki"/>
+                    <connections>
+                        <outlet property="tableView" destination="mjb-rz-7M0" id="a0a-z5-8q4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huy-wq-MCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,6 +57,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zch-o4-5F0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Trc-au-yZO" id="0Ch-4t-9wa"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,6 +132,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="kWE-QO-Wbl" id="mRH-yS-EC0"/>
+                                    <outlet property="delegate" destination="kWE-QO-Wbl" id="50k-QU-nVD"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,6 +147,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qrb-hZ-kDi"/>
+                    <connections>
+                        <outlet property="collectionView" destination="owx-SO-TrO" id="JRF-oJ-Afs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-ZG-abV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
