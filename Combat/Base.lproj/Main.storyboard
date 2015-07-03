@@ -35,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zpX-4x-fki"/>
+                    <connections>
+                        <outlet property="tableView" destination="mjb-rz-7M0" id="a0a-z5-8q4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huy-wq-MCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,6 +147,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qrb-hZ-kDi"/>
+                    <connections>
+                        <outlet property="collectionView" destination="owx-SO-TrO" id="JRF-oJ-Afs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5n-ZG-abV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

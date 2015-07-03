@@ -10,6 +10,8 @@ import UIKit
 
 class ItemsViewController: UIViewController
 {
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     private var items = [Item]()
 }
 
