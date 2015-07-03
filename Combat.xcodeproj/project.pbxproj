@@ -19,6 +19,7 @@
 		B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45CC21B3AFE96002B178B /* Constants.swift */; };
 		B4E95A251B468426008F1499 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A241B468426008F1499 /* ItemsViewController.swift */; };
 		B4E95A271B468809008F1499 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A261B468809008F1499 /* Item.swift */; };
+		B4E95A231B465677008F1499 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E95A221B465677008F1499 /* MapViewController.swift */; };
 		B4FE28691B43DBD000F86C85 /* Combat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE28681B43DBD000F86C85 /* Combat.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		B4E45CC21B3AFE96002B178B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
 		B4E95A241B468426008F1499 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = Controller/ItemsViewController.swift; sourceTree = "<group>"; };
 		B4E95A261B468809008F1499 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
+		B4E95A221B465677008F1499 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Controller/MapViewController.swift; sourceTree = "<group>"; };
 		B4FE28681B43DBD000F86C85 /* Combat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Combat.swift; path = Model/Combat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E95A241B468426008F1499 /* ItemsViewController.swift */,
+				B4E95A221B465677008F1499 /* MapViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				B4E95A251B468426008F1499 /* ItemsViewController.swift in Sources */,
 				B4E45CC31B3AFE96002B178B /* Constants.swift in Sources */,
 				B4FE28691B43DBD000F86C85 /* Combat.swift in Sources */,
+				B4E95A231B465677008F1499 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

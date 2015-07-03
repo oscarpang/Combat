@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1871" y="-275"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="MVJ-pM-uAF">
             <objects>
-                <viewController id="Trc-au-yZO" sceneMemberID="viewController">
+                <viewController id="Trc-au-yZO" customClass="MapViewController" customModule="Combat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mbs-9k-ae1"/>
                         <viewControllerLayoutGuide type="bottom" id="AXv-o0-CgB"/>
@@ -62,7 +62,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="fhc-gn-vsX"/>
                     <connections>
-                        <segue destination="PzM-V9-XSd" kind="presentation" identifier="Enter Battle" modalTransitionStyle="crossDissolve" id="kWC-uF-GXg"/>
+                        <outlet property="mapView" destination="zch-o4-5F0" id="row-ct-2Tl"/>
+                        <segue destination="u1k-R3-Rcu" kind="presentation" identifier="Enter Battle" modalTransitionStyle="crossDissolve" id="kWC-uF-GXg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIC-yC-bog" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,7 +143,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tmu-kg-Q9x" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="znN-nH-wDD">
                         <autoresizingMask key="autoresizingMask"/>
@@ -239,4 +240,7 @@
             <point key="canvasLocation" x="2767" y="426"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kWC-uF-GXg"/>
+    </inferredMetricsTieBreakers>
 </document>
