@@ -39,7 +39,7 @@
         <!--Map-->
         <scene sceneID="MVJ-pM-uAF">
             <objects>
-                <viewController id="Trc-au-yZO" sceneMemberID="viewController">
+                <viewController id="Trc-au-yZO" customClass="MapViewController" customModule="Combat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mbs-9k-ae1"/>
                         <viewControllerLayoutGuide type="bottom" id="AXv-o0-CgB"/>
@@ -62,6 +62,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="CsS-mP-GEE"/>
                     <connections>
+                        <outlet property="mapView" destination="zch-o4-5F0" id="row-ct-2Tl"/>
                         <segue destination="u1k-R3-Rcu" kind="presentation" identifier="Enter Battle" modalTransitionStyle="crossDissolve" id="kWC-uF-GXg"/>
                     </connections>
                 </viewController>
@@ -143,7 +144,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tmu-kg-Q9x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="znN-nH-wDD">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
