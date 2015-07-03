@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="cwb-8q-IKd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mjb-rz-7M0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mjb-rz-7M0" firstAttribute="bottom" secondItem="bxd-Ni-e19" secondAttribute="top" id="BWr-HZ-HoC"/>
+                            <constraint firstItem="mjb-rz-7M0" firstAttribute="leading" secondItem="cwb-8q-IKd" secondAttribute="leading" id="Bsr-UF-TNN"/>
+                            <constraint firstItem="mjb-rz-7M0" firstAttribute="top" secondItem="Z2f-UW-OcX" secondAttribute="bottom" id="CWG-Yi-PBF"/>
+                            <constraint firstAttribute="trailing" secondItem="mjb-rz-7M0" secondAttribute="trailing" id="Uzg-mg-Fo4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Monsters" id="biR-AT-8k6"/>
                 </viewController>
@@ -88,7 +100,36 @@
                     <view key="view" contentMode="scaleToFill" id="K3g-Qm-8wA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="owx-SO-TrO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XLp-S6-32f">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="G4P-8u-1dU">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="owx-SO-TrO" firstAttribute="leading" secondItem="K3g-Qm-8wA" secondAttribute="leading" id="OUG-ab-Ug8"/>
+                            <constraint firstItem="owx-SO-TrO" firstAttribute="top" secondItem="k6y-fe-K8Z" secondAttribute="bottom" id="Psb-EA-rdR"/>
+                            <constraint firstAttribute="trailing" secondItem="owx-SO-TrO" secondAttribute="trailing" id="eQz-iq-xOD"/>
+                            <constraint firstItem="owx-SO-TrO" firstAttribute="bottom" secondItem="c82-tV-cez" secondAttribute="top" id="v6K-zt-cvY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Backpack Items" id="bOl-Bj-jai"/>
                 </viewController>
