@@ -184,7 +184,7 @@ class Combat
     {
         if bothAttack
         {
-            var damage = attacker.damage - target.defense
+            var damage = attacker.attack - target.defense
             if (damage < 0) { damage = 0 }
             damage += Int32(arc4random() % 10 + 5)
             target.damage(damage)
@@ -197,7 +197,7 @@ class Combat
                 return .End
             }
             
-            damage = target.damage - attacker.defense
+            damage = target.attack - attacker.defense
             if (damage < 0) { damage = 0 }
             damage += Int32(arc4random() % 10 + 5)
             attacker.damage(damage)
@@ -215,7 +215,7 @@ class Combat
         {
             if target.action == .Defend {
                 
-                var damage = attacker.damage - Int32((Float(target.defense) * 1.5))
+                var damage = attacker.attack - Int32((Float(target.defense) * 1.5))
                 if (damage < 0) { damage = 0 }
                 damage += Int32(arc4random() % 10 + 5)
                 target.damage(damage)
@@ -231,7 +231,7 @@ class Combat
                 
             } else if target.action == .Escape {
                 
-                var damage = attacker.damage - target.defense
+                var damage = attacker.attack - target.defense
                 if (damage < 0) { damage = 0 }
                 damage += Int32(arc4random() % 10 + 5)
                 target.damage(damage)
