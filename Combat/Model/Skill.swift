@@ -14,13 +14,13 @@ class Skill: Printable
     // used for display only
     let name: String
     let type: Constants.SkillType
-    let element: Constants.Element
+    let element: Constants.MonsterType
     
     // unique id for skill
     let id: String
     
     // designated initializer
-    init(name: String, id: String, type: Constants.SkillType, element: Constants.Element) {
+    init(name: String, id: String, type: Constants.SkillType, element: Constants.MonsterType) {
         self.name = name
         self.id = id
         self.type = type

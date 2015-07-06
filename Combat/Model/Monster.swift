@@ -64,8 +64,18 @@ class Monster
         self.speed = speed
         self.attack = attack
         self.defense = defense
+        self.spAttack = 0
+        self.spDefense = 0
         
-        // TODO: transform: skills[Int32] -> skills[Skill]
+      
+        self.num = 1
+        self.species = " "
+        self.types = [Constants.MonsterType.Fire]
+        self.genderRatio = (1,0)
+        self.preEvoSpecies = ""
+        self.postEvoSpecies = ""
+        self.evoLevel = 0
+          // TODO: transform: skills[Int32] -> skills[Skill]
     }
     
     // random monster initializer
@@ -84,6 +94,19 @@ class Monster
         self.speed = Utilities.randomValue(type: .Speed, growth: growth)
         self.attack = Utilities.randomValue(type: .Damage, growth: growth)
         self.defense = Utilities.randomValue(type: .Defense, growth: growth)
+        
+        
+        self.spAttack = 0
+        self.spDefense = 0
+        
+        
+        self.num = 1
+        self.species = " "
+        self.types = [Constants.MonsterType.Fire]
+        self.genderRatio = (1,0)
+        self.preEvoSpecies = ""
+        self.postEvoSpecies = ""
+        self.evoLevel = 0
     }
     
     // battle functions

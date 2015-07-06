@@ -12,6 +12,8 @@
 	<dict>
 		<key>200DA84534E994FB7CA8D894D85C3B364E1455FF</key>
 		<string>github.com:QingweiPeterLan/Combat.git</string>
+		<key>2CEAEAA908B469CE9CCCDB1039DB2B0AEEA5CDA4</key>
+		<string>github.com:FahimF/SQLiteDB.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Combat.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>200DA84534E994FB7CA8D894D85C3B364E1455FF</key>
 		<string>../..</string>
+		<key>2CEAEAA908B469CE9CCCDB1039DB2B0AEEA5CDA4</key>
+		<string>../../../SQLiteDB</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:QingweiPeterLan/Combat.git</string>
@@ -35,6 +39,14 @@
 			<string>200DA84534E994FB7CA8D894D85C3B364E1455FF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Combat</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CEAEAA908B469CE9CCCDB1039DB2B0AEEA5CDA4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SQLiteDB</string>
 		</dict>
 	</array>
 </dict>
