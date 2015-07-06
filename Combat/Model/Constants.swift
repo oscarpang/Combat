@@ -10,19 +10,33 @@ import Foundation
 
 class Constants
 {
-    enum Element: Int32, Printable {
-        case Fire, Water, Earth, Thunder, Wind
+    enum MonsterType: Int32, Printable {
+        case Normal, Fire, Water, Electric, Grass, Ice, Fighting, Poison, Ground, Flying, Psychic, Bug, Rock, Ghost, Gragon, Dark, Steel, Fairy
         
         var description: String {
             switch self {
+            case .Normal: return "Normal"
             case .Fire: return "Fire"
             case .Water: return "Water"
-            case .Earth: return "Earth"
-            case .Thunder: return "Thunder"
-            case .Wind: return "Wind"
+            case .Electric: return "Electric"
+            case .Grass: return "Grass"
+            case .Ice: return "Ice"
+            case .Fighting: return "Fighting"
+            case .Poison: return "Poison"
+            case .Ground: return "Ground"
+            case .Flying: return "Flying"
+            case .Psychic: return "Psychic"
+            case .Bug: return "Bug"
+            case .Rock: return "Rock"
+            case .Ghost: return "Ghost"
+            case .Gragon: return "Gragon"
+            case .Dark: return "Dark"
+            case .Steel: return "Steel"
+            case .Fairy: return "Fairy"                
             }
         }
     }
+    
     
     enum SkillType: Int32, Printable {
         case Attack, Defend, Heal, Buff
