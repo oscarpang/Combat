@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25E9D85C1B4A524300A961BA /* SQLite in Resources */ = {isa = PBXBuildFile; fileRef = 25E9D85B1B4A524300A961BA /* SQLite */; };
+		25E9D8621B4A52D200A961BA /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E9D8611B4A52D200A961BA /* libsqlite3.0.dylib */; };
 		B40A4B541B3BF837000C19D4 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A4B531B3BF837000C19D4 /* Monster.swift */; };
 		B40A4B5A1B3C11B0000C19D4 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A4B591B3C11B0000C19D4 /* Skill.swift */; };
 		B4E45C981B3AE234002B178B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E45C971B3AE234002B178B /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25E9D85B1B4A524300A961BA /* SQLite */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SQLite; path = Combat/SQLite; sourceTree = "<group>"; };
+		25E9D8611B4A52D200A961BA /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		B40A4B531B3BF837000C19D4 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Model/Monster.swift; sourceTree = "<group>"; };
 		B40A4B591B3C11B0000C19D4 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
 		B4E45C921B3AE234002B178B /* Combat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E9D8621B4A52D200A961BA /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +74,9 @@
 		B4E45C891B3AE234002B178B = {
 			isa = PBXGroup;
 			children = (
+				25E9D8611B4A52D200A961BA /* libsqlite3.0.dylib */,
 				B4E45C941B3AE234002B178B /* Combat */,
+				25E9D85B1B4A524300A961BA /* SQLite */,
 				B4E45CAD1B3AE234002B178B /* CombatTests */,
 				B4E45C931B3AE234002B178B /* Products */,
 			);
@@ -231,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E9D85C1B4A524300A961BA /* SQLite in Resources */,
 				B4E45CA01B3AE234002B178B /* Main.storyboard in Resources */,
 				B4E45CA51B3AE234002B178B /* LaunchScreen.xib in Resources */,
 				B4E45CA21B3AE234002B178B /* Images.xcassets in Resources */,
@@ -384,7 +392,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Combat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Combat/SQLite",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -394,7 +407,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Combat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Combat/SQLite",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
