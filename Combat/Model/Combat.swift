@@ -60,7 +60,7 @@ class Combat
             }
         }
             
-        // one or both monsters escape
+            // one or both monsters escape
         else if monster1.action == .Escape || monster2.action == .Escape
         {
             // both monsters escape
@@ -92,7 +92,7 @@ class Combat
                 }
             }
                 
-            // only monster escapes
+                // only monster escapes
             else
             {
                 // monster1 escapes
@@ -105,7 +105,7 @@ class Combat
                         status = evaluateEscape(escaper: monster1, opponent: monster2)
                     }
                         
-                    // monster2 attacks
+                        // monster2 attacks
                     else
                     {
                         let mons1speed = Int32(Float(monster1.speed) * 0.75)
@@ -123,7 +123,7 @@ class Combat
                     }
                 }
                     
-                // monster2 escapes
+                    // monster2 escapes
                 else
                 {
                     // monster1 defends
@@ -133,7 +133,7 @@ class Combat
                         status = evaluateEscape(escaper: monster2, opponent: monster1)
                     }
                         
-                    // monster1 attacks
+                        // monster1 attacks
                     else
                     {
                         let mons2speed = Int32(Float(monster2.speed) * 0.75)
@@ -153,7 +153,7 @@ class Combat
             }
         }
             
-        // one or both monsters defend
+            // one or both monsters defend
         else
         {
             // both monsters defend
@@ -164,12 +164,12 @@ class Combat
                 status = .Continue
             }
                 
-            // monster1 defends
+                // monster1 defends
             else if monster1.action == .Defend {
                 status = evaluateAttack(attacker: monster2, target: monster1, bothAttack: false)
             }
                 
-            // monster2 defends
+                // monster2 defends
             else {
                 status = evaluateAttack(attacker: monster1, target: monster2, bothAttack: false)
             }
@@ -184,7 +184,7 @@ class Combat
     {
         if bothAttack
         {
-            var damage = attacker.damage - target.defense
+            var damage = attacker.attack - target.defense
             if (damage < 0) { damage = 0 }
             damage += Int32(arc4random() % 10 + 5)
             target.damage(damage)
@@ -197,7 +197,7 @@ class Combat
                 return .End
             }
             
-            damage = target.damage - attacker.defense
+            damage = target.attack - attacker.defense
             if (damage < 0) { damage = 0 }
             damage += Int32(arc4random() % 10 + 5)
             attacker.damage(damage)
@@ -215,14 +215,14 @@ class Combat
         {
             if target.action == .Defend {
                 
-                var damage = attacker.damage - Int32((Float(target.defense) * 1.5))
+                var damage = attacker.attack - Int32((Float(target.defense) * 1.5))
                 if (damage < 0) { damage = 0 }
                 damage += Int32(arc4random() % 10 + 5)
                 target.damage(damage)
                 
                 println("\(target.name) defends.")
                 println("\(attacker.name) attacks \(target.name), \(target.name) loses \(damage) hp.")
-
+                
                 // check if target is dead
                 if target.isDead {
                     println("\(target.name) is dead.")
@@ -231,7 +231,7 @@ class Combat
                 
             } else if target.action == .Escape {
                 
-                var damage = attacker.damage - target.defense
+                var damage = attacker.attack - target.defense
                 if (damage < 0) { damage = 0 }
                 damage += Int32(arc4random() % 10 + 5)
                 target.damage(damage)
