@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252F0AF31B4A887700FA706E /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 25CAD1611B4A73D400165347 /* data.db */; };
 		25E9D8621B4A52D200A961BA /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E9D8611B4A52D200A961BA /* libsqlite3.0.dylib */; };
 		25E9D8661B4A56A200A961BA /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9D8651B4A56A200A961BA /* SQLiteDB.swift */; };
 		25E9D8681B4A56AA00A961BA /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9D8671B4A56AA00A961BA /* String-Extras.swift */; };
@@ -253,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252F0AF31B4A887700FA706E /* data.db in Resources */,
 				B4E45CA01B3AE234002B178B /* Main.storyboard in Resources */,
 				B4E45CA51B3AE234002B178B /* LaunchScreen.xib in Resources */,
 				B4E45CA21B3AE234002B178B /* Images.xcassets in Resources */,

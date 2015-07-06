@@ -15,10 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let db = SQLiteDB.sharedInstance()
     
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        let data = db.query("SELECT * FROM Pokedex WHERE ID = 649")
+        let row = data[0]
+        if let name = row["Species_Name"]{
+            println(name.asString())
+        }
 //        // #### Utilities test
 //        let growth = Utilities.randomGrowth()
 //        println(growth)
