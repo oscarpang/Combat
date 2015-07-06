@@ -18,16 +18,31 @@ class Monster
     
     // used for display only
     let name: String
-    let element: Constants.Element
+    let element: Constants.MonsterType
     let level: Int32
     let growth: Float
+    
+    // read only identity info
+    private(set) var num: Int32
+    private(set) var species: String
+    private(set) var types: [Constants.MonsterType]
+    private(set) var genderRatio: (Int32, Int32)
+    
+    // evolution system
+    private(set) var preEvoSpecies: String
+    private(set) var postEvoSpecies: String
+    private(set) var evoLevel: Int32
     
     // read only battle properties
     private(set) var hp: Int32 { didSet { if hp <= 0 { hp = 0; setDead() } } }
     private(set) var mp: Int32
     private(set) var speed: Int32
-    private(set) var damage: Int32
+    private(set) var attack: Int32
     private(set) var defense: Int32
+    private(set) var spAttack: Int32
+    private(set) var spDefense: Int32
+    
+    
     private(set) var isDead: Bool = false
     
     // read only skillset
@@ -35,11 +50,11 @@ class Monster
     
     // initializer with all properties
     // designated initializer
-    init(name: String, element: Int32, growth: Float, level: Int32, hp: Int32, mp: Int32, speed: Int32, damage: Int32, defense: Int32, skills: [Int32])
+    init(name: String, element: Int32, growth: Float, level: Int32, hp: Int32, mp: Int32, speed: Int32, attack: Int32, defense: Int32, skills: [Int32])
     {
         /* set constant display properties */
         self.name = name
-        self.element = Constants.Element(rawValue: element)!
+        self.element = Constants.MonsterType(rawValue: element)!
         self.level = level
         self.growth = growth
         
@@ -47,7 +62,7 @@ class Monster
         self.hp = hp
         self.mp = mp
         self.speed = speed
-        self.damage = damage
+        self.attack = attack
         self.defense = defense
         
         // TODO: transform: skills[Int32] -> skills[Skill]
@@ -61,13 +76,13 @@ class Monster
         self.level = level
         
         // generate random properties
-        self.element = Constants.Element(rawValue: Utilities.randomElement())!
+        self.element = Constants.MonsterType(rawValue: Utilities.randomElement())!
         
         self.growth = Utilities.randomGrowth()
         self.hp = Utilities.randomValue(type: .HP, growth: growth)
         self.mp = Utilities.randomValue(type: .MP, growth: growth)
         self.speed = Utilities.randomValue(type: .Speed, growth: growth)
-        self.damage = Utilities.randomValue(type: .Damage, growth: growth)
+        self.attack = Utilities.randomValue(type: .Damage, growth: growth)
         self.defense = Utilities.randomValue(type: .Defense, growth: growth)
     }
     
